@@ -37,7 +37,7 @@ class MyStatelessWidget extends StatelessWidget {
                 children: <Widget>[
                   Card(
                     margin: const EdgeInsets.only(top: 50.0),
-                    color: Colors.blue[100], //fundo do card
+                    color: Colors.blue[100],//fundo do card
                     child: Container(
                       padding: const EdgeInsets.all(20.0),
                       child: Column(
