@@ -12,7 +12,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: _title,
       home: Scaffold(
-        appBar: AppBar(title: const Text(_title)),
+        appBar: AppBar(
+          title: const Text(_title),
+          backgroundColor: Colors.black,
+        ),
         body: const MyStatelessWidget(),
       ),
     );
@@ -25,20 +28,25 @@ class MyStatelessWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+        backgroundColor: Colors.blueGrey, //margin
         body: Container(
-            margin: EdgeInsets.all(10),
+            color: Colors.blueGrey, //fundo do body
+            margin: const EdgeInsets.all(10),
             child: Center(
               child: Column(
                 children: <Widget>[
                   Card(
-                    color: Colors.blue[100],
+                    margin: const EdgeInsets.only(top: 50.0),
+                    color: Colors.blue[100], //fundo do card
                     child: Container(
-                      padding: EdgeInsets.all(20.0),
+                      padding: const EdgeInsets.all(20.0),
                       child: Column(
-                        children: <Widget>[
+                        children: const <Widget>[
                           Text('Aristóteles'),
                           Text(
-                              'É fazendo que se aprende a fazer aquilo que se deve aprender a fazer.')
+                            'É fazendo que se aprende a fazer aquilo que se deve aprender a fazer.',
+                            textAlign: TextAlign.center,
+                          )
                         ],
                       ),
                     ),
